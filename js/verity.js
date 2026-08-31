@@ -51,7 +51,7 @@ spots.forEach(spot => {
 
         if(e.target.dataset.type == 'enemy')
         {
-            e.target.src = "img/"+shape+".png";
+            e.target.src = "./img/"+shape+".png";
             e.target.dataset.type = 'shape';
             e.target.dataset.shape = shape;
 
@@ -200,7 +200,7 @@ function spawnKnights() {
     possibleDrops = ['c', 't', 'q'];
     spots.forEach(spot => {
         spot.dataset.type = 'enemy';
-        spot.src = 'img/hive.png';
+        spot.src = './img/hive.png';
     })
 }
 
