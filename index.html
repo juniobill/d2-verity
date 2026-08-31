@@ -1,29 +1,31 @@
 <html class="dark">
 <head>
-    <link rel="stylesheet" href="css/verity.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destiny 2 - Veracidade</title>
 
+    <link rel="stylesheet" href="css/verity.css">
     <script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
 </head>
 <body class="bg-gray-900">
-    <h1 class="font-bold mt-1 text(center 3xl gray-400)">Destiny 2 - Mechanics</h1>
-    <h2 class="font-bold mt-1 text(center 2xl gray-600)">Salvation Edge - Verity (4th Encounter)</h2>
-    <h3 class="font-bold mt-1 text(center 2xl gray-600)">Dissection</h3>
+    <h1 class="font-bold mt-1 text(center 3xl gray-400)">Destiny 2 - Mecânicas</h1>
+    <h2 class="font-bold mt-1 text(center 2xl gray-600)">O Limiar da Salvação - Veracidade (4º Encontro)</h2>
+    <h3 class="font-bold mt-1 text(center 2xl gray-600)">Dissecação</h3>
 
     <div class="flex justify-center gap-10">
-        <div class="text(2xl gray-200 center) mt-10">Call Outs: <div id="callouts">Trigon</div></div>
-        <div class="text(2xl gray-200 center) mt-10">Your Shape: <div id="buff">Trigon</div></div>
+        <div class="text(2xl gray-200 center) mt-10">Símbolos de dentro: <div id="callouts">Triângulo</div></div>
+        <div class="text(2xl gray-200 center) mt-10">Sua forma: <div id="buff">Triângulo</div></div>
     </div>
 
     <div class="text(2xl gray-200 center) mt-3">
         Actions:
-        <button class="btn p-1 rounded bg-green-900" onclick="check()" id="check">Check</button>
-        <button class="btn p-1 rounded bg-red-900" onclick="reset()" id="reset">Reset</button>
-        <a role="button" class="btn p-1 rounded bg-blue-900" href="patch.html" id="reset">Patch Notes</a>
+        <button class="btn p-1 rounded bg-green-900" onclick="check()" id="check">Verificar</button>
+        <button class="btn p-1 rounded bg-red-900" onclick="reset()" id="reset">Reiniciar</button>
+        <a role="button" class="btn p-1 rounded bg-blue-900" href="patch.html" id="reset">Notas da atualização</a>
     </div>
 
     <div class="text(2xl gray-200 center) mt-3" id="result" style="display: none;">
-        Correct!
+        Correto!
     </div>
     
     <div class="w-[1200px] h-[650px] mt-5 mx-auto px-52 pt-10 grid grid-cols-5 grid-rows-3 justify-items-start items-start bg-gray-700 rounded">
@@ -59,9 +61,6 @@
         <div class=""></div>
     </div>
     
-
-
-
-    <script src="js/verity.js?v=06252024"></script>
+    <script src="js/verity.js?v=ptbr-1"></script>
 </body>
 </html>

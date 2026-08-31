@@ -3,14 +3,14 @@ const guardians = document.querySelectorAll('div[id^=shape] > img');
 
 const shapes = {
     0: 'c',
-    1: 's',
+    1: 'q',
     2: 't'
 };
 
 var shapeHolding = [];
 
 var callout = shuffler(shapes);
-var possibleDrops = ['c', 't', 's'];
+var possibleDrops = ['c', 't', 'q'];
 var threeD = generateThreeDShapes(callout);
 var shapesToSwap = [];
 
@@ -176,28 +176,28 @@ function shapeToWord(shape) {
     shape = shape.sort().join('');
     switch(shape) {
         case 'c':
-            return 'Orbicular';
-        case 's':
-            return 'Quadrate';
+            return 'Círculo';
+        case 'q':
+            return 'Quadrado';
         case 't':
-            return 'Triage';
-        case 'cs':
-            return 'Cylindroid';
+            return 'Triângulo';
+        case 'cq':
+            return 'Cilindro';
         case 'ct':
-            return 'Conoid';
-        case 'st':
-            return 'Trilateral';
+            return 'Cone';
+        case 'qt':
+            return 'Prisma';
         case 'tt':
-            return 'Pyramid';
-        case 'ss':
-            return 'Cube';
+            return 'Pirâmide';
+        case 'qq':
+            return 'Cubo';
         case 'cc':
-            return 'Sphere';
+            return 'Esfera';
     }
 }
 
 function spawnKnights() {
-    possibleDrops = ['c', 't', 's'];
+    possibleDrops = ['c', 't', 'q'];
     spots.forEach(spot => {
         spot.dataset.type = 'enemy';
         spot.src = 'img/hive.png';
@@ -239,13 +239,13 @@ function check() {
         var shapeElement = document.getElementById(`shape${i}`);
         if(shapeElement.dataset.shape.includes(callouts[i])) {
 
-            result.innerText = 'Incorrect!'
+            result.innerText = 'Incorreto!'
             result.style = 'display: block;'
             return false;
         }
     }
 
-    result.innerText = 'Correct!'
+    result.innerText = 'Correto!'
     result.style = 'display: block;'
     return true;
 }
