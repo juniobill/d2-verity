@@ -207,7 +207,7 @@ function spawnKnights() {
 function displayShape(shape, shapes) {
     joinedShape = shapes.sort().join('');
     shape.dataset.shape = joinedShape;
-    shape.style.backgroundImage = `url("../img/${joinedShape}.png"`;
+    shape.style.backgroundImage = `url("./img/${joinedShape}.png"`;
 }
 
 function swapShapes() {
